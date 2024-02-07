@@ -18,9 +18,9 @@
   --section-title: 2rem;
 
   /* padding */
-  --default-padding: 2rem 1rem;
+  --default-padding: 2rem 4rem;
   --button-padding: 0.8rem 1rem;
-  --section-padding: 5rem 0;
+  --section-padding: 9rem 0;
   --description-padding: 10rem;
 
   /* Font Family */
@@ -32,16 +32,28 @@
 
   /* Transition */
   --transition: all 0.2s ease-in-out;
-/*Responsive */
+
+  /* Responsive */
   @media screen and (max-width: 1024px) {
-    .nav__list {
-      display: none;
-    }
-    .nav__hamburger {
-      display: block;
-    }
-    
-  
+    /* padding */
+    --default-padding: 1rem;
+    --button-padding: 0.8rem 1rem;
+    --section-padding: 5rem 0;
+    --description-padding: 10rem 5rem;
+
+    /* font size */
+    --default-fontSize: 1.15rem;
+    --title-fontSize: 4rem;
+    --menu-item-fontSize: var(--default-fontSize);
+    --section-title: 2rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    /* padding */
+    --section-padding: 2rem 0;
+    --description-padding: 3rem;
+    /* font size */
+    --title-fontSize: 2rem;
   }
 }
 
@@ -82,7 +94,8 @@ li {
 }
 
 .nav {
-  text-align: right;
+  width: 30%;
+  height: 100%;
 }
 
 .nav__list {
@@ -374,6 +387,34 @@ li {
   .about {
     flex-direction: column-reverse;
   }
+/* ------------------ Responsive ---------------------  */
+
+@media screen and (max-width: 1024px) {
+  .nav__list {
+    display: none;
+  }
+  .nav__hamburger {
+    display: block;
+  }
+  .nav {
+    text-align: right;
+  }
+  .hero {
+    background-image: url(./../images/mobile/image-header.jpg);
+    padding: 9rem 1rem;
+    text-align: center;
+  }
+
+  .about__title {
+    font-size: 3rem;
+  }
+  .about__text {
+    font-size: 1.5rem;
+  }
+
+  .about {
+    flex-direction: column-reverse;
+  }
   .about__image {
     text-align: center;  
   }
@@ -383,7 +424,7 @@ li {
   #expertise__container {
     flex-direction: column;
   }
-  /* .expertise--bg-apple {
+  .expertise--bg-apple {
     background-image: url(./../images/mobile/image-graphic-design.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -394,10 +435,11 @@ li {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-  } */
+  } 
+  .gallery__item{
+    flex-direction: row;
+  }
   
-}
-
 @media screen and (min-width: 1025px) {
   .nav__list {
     display: flex;
