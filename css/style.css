@@ -436,8 +436,9 @@ li {
     background-position: center center;
     background-size: cover;
   } 
-  .gallery__item{
-    flex-direction: row;
+  #gallery__item1, #gallery__item2{
+    display:inline-table;
+
   }
   
 @media screen and (min-width: 1025px) {
