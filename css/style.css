@@ -386,10 +386,7 @@ li {
     font-size: 1rem;
     text-align: center;
   }
-  .about__link {
-    font-family: var(--secondary-font);
-    margin-right: 50%;
-  }
+  
   
   .about__link--color-yellow {
     box-shadow: 0 8px 5px 1px var(--yellow-color);
@@ -423,11 +420,8 @@ li {
     background-position: center center;
     background-size: cover;
   } 
-  .gallery{
-    display: flex;
-  }
   
-  
+
   .footer__list{
     margin-right: 40%;
   }
