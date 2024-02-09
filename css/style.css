@@ -460,6 +460,7 @@ li {
     width: 20%;
     padding-left: 100px;
   } 
+  
 }
 
 @media screen and (max-width: 1190px) {
@@ -495,7 +496,7 @@ li {
     display: flex;
     justify-content: space-between;
     width: 20%;
-    padding-left: 350px;
+    padding-left:10rem;
     
   }
 }
